@@ -846,6 +846,10 @@ novac <- Brojpodoblastcisto %>%
   summarise(`EVRI` = sum(`EVRI`)) %>%
   mutate()
 
+
+
+#Brojpodoblastcisto$EVRI <- format(novac, big.mark=',', digits = 0, nsmall=0, scientific = FALSE)
+
 projekti <- Brojpodoblastcisto %>%
   count(`ORGAN`) 
 
@@ -865,7 +869,7 @@ SUMAMedija <-  head(Brojpodoblastcisto$EVRI, 10)
 
 ```
 
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast AKTUELNA KULTURNA PRODUKCIJA odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast AKTUELNA KULTURNA PRODUKCIJA odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 
@@ -997,7 +1001,7 @@ SUMAMedija <-  head(Brojpodoblastcisto2$EVRI, 10)
 
 ```
 
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast MANIFESTACIJE odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast MANIFESTACIJE odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 
@@ -1126,7 +1130,7 @@ SUMAMedija <-  head(Brojpodoblastcisto3$EVRI, 10)
 ```
 
 
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast KULTURNA BAŠTINA odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast KULTURNA BAŠTINA odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 
@@ -1259,7 +1263,7 @@ SUMAMedija <-  head(Brojpodoblastcisto4$EVRI, 10)
 
 
 ```
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast OBRAZOVANJE odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast OBRAZOVANJE odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 
@@ -1384,7 +1388,7 @@ SUMAMedija <-  head(Brojpodoblastcisto5$EVRI, 10)
 
 
 ```
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast DRUŠTVO odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast DRUŠTVO odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 U ovoj oblasti najviše sredstava odobreni su projektima sledećih naziva: <br> •  <b>`r paste(Imena, SUMAMedija,  sep = " - ", collapse = " evra <br> • ")`</b> evra. 
@@ -1507,7 +1511,7 @@ SUMAMedija <-  head(Brojpodoblastcisto6$EVRI, 10)
 
 ```
 
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast FILMSKO STVARALAŠTVO odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast FILMSKO STVARALAŠTVO odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 U ovoj oblasti najviše sredstava odobreni su projektima sledećih naziva: <br> •  <b>`r paste(Imena, SUMAMedija,  sep = " - ", collapse = " evra <br> • ")`</b> evra. 
@@ -1628,7 +1632,7 @@ SUMAMedija <-  head(Brojpodoblastcisto7$EVRI, 10)
 
 ```
 
-POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast MULTIKULTURALNOST odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
+POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast MULTIKULTURALNOST odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine.
 <br>
 <br>
 U ovoj oblasti najviše sredstava odobreni su projektima sledećih naziva: <br> •  <b>`r paste(Imena, SUMAMedija,  sep = " - ", collapse = " evra <br> • ")`</b> evra. 
@@ -1668,7 +1672,8 @@ data3 <- data8 %>% replace(data8 == "NULL", NA)
   theme(legend.position="right")  +
   labs(subtitle = "Multikulturalnost - Broj projekata po podoblastima")+
     scale_fill_brewer(palette="Set1")
-
+  
+  
 
 # colors <- c('rgb(211,94,96)', 'rgb(128,133,133)', 'rgb(144,103,167)', 'rgb(171,104,87)', 'rgb(114,147,203)')
 # 
@@ -1752,7 +1757,7 @@ SUMAMedija <-  head(Brojpodoblastcisto8$EVRI, 10)
 ```
 POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast VIZEULNO STVARALAŠTVO, u periodu od 2015. do 30. juna 2022. godine nije izdvojio nikakva sredstva.
 
-<!-- POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast VIZEULNO STVARALAŠTVO odobrio je ukupno <b>`r paste(round(novac, digits=2))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine. -->
+<!-- POKRAJINSKI SEKRETARIJAT ZA KULTURU I INFORMISANJE za oblast VIZEULNO STVARALAŠTVO odobrio je ukupno <b>`r paste0("", formatC(as.numeric(novac), format="f", digits=0, big.mark=","))` evra</b> za <b>`r projekti[1,2]` projekata</b>, što je <b>`r round(novac*100/ukupnasuma, digit=2)` odsto</b> od ukupne odobrene sume za projekte čiji je cilj bio poboljšanje informisanja građana o kulturi, u periodu od 2015. do 30. juna 2022. godine. -->
 <!-- <br> -->
 <!-- <br> -->
 <!-- U ovoj oblasti najviše sredstava odobreni su projektima sledećih naziva: <br> •  <b>`r paste(Imena, SUMAMedija,  sep = " - ", collapse = " evra <br> • ")`</b> evra.  -->
